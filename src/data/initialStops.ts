@@ -124,28 +124,8 @@ export const INITIAL_STOPS: ErrandStop[] = [
     ]
   },
   {
-    id: 'gasstation',
-    stopNumber: 3,
-    name: 'Gas Station',
-    category: 'Fuel Top-Off for Storage',
-    address: 'Mobil / Shell / Irving on Daniel Webster Hwy, Nashua',
-    badge: 'Fill Your 3 Gas Cans',
-    accentColor: 'blue',
-    items: [
-      {
-        id: 'gas-1',
-        name: 'Fresh Gasoline (90-93 Octane or Ethanol-Free if available)',
-        qty: '15 Gallons (3 Cans x 5 Gal)',
-        partOrModel: 'Fill your existing can + the 2 new cans from Home Depot',
-        details: 'Brings boat fuel tank from 1/2 (20 gal) to ~90-95% winter level (35-36 gal)',
-        warningOrTip: 'Pour the 8 oz Sta-Bil Marine into boat tank BEFORE pouring gas in to agitate & mix',
-        completed: false
-      }
-    ]
-  },
-  {
     id: 'wholefoods',
-    stopNumber: 4,
+    stopNumber: 3,
     name: 'Whole Foods Market',
     category: 'Amazon Return & Groceries',
     address: '255 Amherst St, Nashua, NH 03063',
@@ -165,6 +145,26 @@ export const INITIAL_STOPS: ErrandStop[] = [
         name: 'Market Groceries / Fresh Produce',
         qty: 'As needed',
         details: 'Tap "+ Add item" below if you want to jot down specific groceries',
+        completed: false
+      }
+    ]
+  },
+  {
+    id: 'gasstation',
+    stopNumber: 4,
+    name: 'Gas Station (Final Stop on Way Home)',
+    category: 'Fuel Top-Off for Winter Storage',
+    address: 'Gas Station on Route back to Dunstable',
+    badge: 'Fill Your 3 Gas Cans Last!',
+    accentColor: 'blue',
+    items: [
+      {
+        id: 'gas-1',
+        name: 'Fresh Gasoline (90-93 Octane or Ethanol-Free if available)',
+        qty: '15 Gallons (3 Cans x 5 Gal)',
+        partOrModel: 'Fill your existing can + the 2 new cans from Home Depot',
+        details: 'Filled last so you don’t smell gasoline fumes while shopping at Whole Foods!',
+        warningOrTip: 'Pour the 8 oz Sta-Bil Marine into boat tank BEFORE pouring gas in to agitate & mix',
         completed: false
       }
     ]

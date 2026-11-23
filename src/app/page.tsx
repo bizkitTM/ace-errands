@@ -131,7 +131,7 @@ export default function Home() {
               </span>
             </div>
             <p className="text-xs sm:text-sm text-slate-400 font-medium">
-              AutoZone ➔ Home Depot ➔ Gas Station ➔ Whole Foods
+              AutoZone ➔ Home Depot ➔ Whole Foods ➔ Gas Station (Last Stop)
             </p>
           </div>
 
