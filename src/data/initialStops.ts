@@ -80,11 +80,20 @@ export const INITIAL_STOPS: ErrandStop[] = [
     id: 'homedepot',
     stopNumber: 2,
     name: 'The Home Depot',
-    category: 'Plumbing & Freeze Protection',
+    category: 'Plumbing, Freeze Protection & Gas Cans',
     address: '268 Daniel Webster Hwy, Nashua, NH 03060',
-    badge: '161 in Stock at South Nashua',
+    badge: 'Cheapest for Gas Cans & Antifreeze',
     accentColor: 'amber',
     items: [
+      {
+        id: 'hd-gas-cans',
+        name: 'Red Plastic 5-Gallon Gasoline Jugs',
+        qty: '2 Jugs (5-Gal each)',
+        partOrModel: 'Scepter / Midwest 5-Gal Red Can (~$19.98 ea)',
+        details: 'Cheapest here! (~$20 at Home Depot vs ~$32 at AutoZone). You save ~$25 buying both here.',
+        warningOrTip: 'Check garden/seasonal aisle or tool corral for red gas cans',
+        completed: false
+      },
       {
         id: 'hd-1',
         name: 'Splash -75°F RV & Marine Antifreeze (Pink PG)',
@@ -120,14 +129,14 @@ export const INITIAL_STOPS: ErrandStop[] = [
     name: 'Gas Station',
     category: 'Fuel Top-Off for Storage',
     address: 'Mobil / Shell / Irving on Daniel Webster Hwy, Nashua',
-    badge: 'Bring Three 5-Gal Cans',
+    badge: 'Fill Your 3 Gas Cans',
     accentColor: 'blue',
     items: [
       {
         id: 'gas-1',
         name: 'Fresh Gasoline (90-93 Octane or Ethanol-Free if available)',
         qty: '15 Gallons (3 Cans x 5 Gal)',
-        partOrModel: 'Fill three portable 5-gallon cans',
+        partOrModel: 'Fill your existing can + the 2 new cans from Home Depot',
         details: 'Brings boat fuel tank from 1/2 (20 gal) to ~90-95% winter level (35-36 gal)',
         warningOrTip: 'Pour the 8 oz Sta-Bil Marine into boat tank BEFORE pouring gas in to agitate & mix',
         completed: false
@@ -138,16 +147,24 @@ export const INITIAL_STOPS: ErrandStop[] = [
     id: 'wholefoods',
     stopNumber: 4,
     name: 'Whole Foods Market',
-    category: 'Groceries & Kitchen',
+    category: 'Amazon Return & Groceries',
     address: '255 Amherst St, Nashua, NH 03063',
-    badge: 'Final Stop',
+    badge: 'Amazon Return Desk Inside',
     accentColor: 'emerald',
     items: [
       {
+        id: 'wf-return',
+        name: 'Amazon Return Drop-Off',
+        qty: 'Bring return item(s) + QR code',
+        details: 'Head to Customer Service / Amazon Return Counter inside entrance',
+        warningOrTip: 'Have Amazon return QR code ready on your iPhone',
+        completed: false
+      },
+      {
         id: 'wf-1',
-        name: 'Fresh Produce / Groceries',
+        name: 'Market Groceries / Fresh Produce',
         qty: 'As needed',
-        details: 'Add custom items on the fly using the "+ Add Item" button below',
+        details: 'Tap "+ Add item" below if you want to jot down specific groceries',
         completed: false
       }
     ]
