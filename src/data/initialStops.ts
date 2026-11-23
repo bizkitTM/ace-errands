@@ -77,6 +77,14 @@ export const INITIAL_STOPS: ErrandStop[] = [
     accentColor: 'amber',
     items: [
       {
+        id: 'hd-batteries',
+        name: 'Drop Off NiMH Batteries (Call2Recycle Bin)',
+        qty: 'Recycle',
+        details: 'Look for the Call2Recycle drop-off bin right inside the main entrance near Customer Service / Returns',
+        warningOrTip: 'Free recycling drop-off for rechargeable batteries at Home Depot',
+        completed: false
+      },
+      {
         id: 'hd-gas-cans',
         name: 'Red Plastic 5-Gallon Gasoline Jugs',
         qty: '2 Jugs (5-Gal each)',
