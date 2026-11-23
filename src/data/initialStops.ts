@@ -64,15 +64,6 @@ export const INITIAL_STOPS: ErrandStop[] = [
         details: '$3.49/ea — Direct OEM match for ACDelco MR43LTS',
         warningOrTip: 'Keep in box for spring install; old plugs stay in for winter fogging',
         completed: false
-      },
-      {
-        id: 'az-5',
-        name: 'Sta-Bil Engine Fogging Oil (Aerosol Can)',
-        qty: '1 Can (12 oz)',
-        partOrModel: 'Part # 22001',
-        details: 'Grab from seasonal/marine shelf or ask counter',
-        warningOrTip: 'Spray directly into spark plug holes; never spray down MPI throttle body',
-        completed: false
       }
     ]
   },

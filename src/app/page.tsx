@@ -33,7 +33,13 @@ export default function Home() {
     try {
       const stored = localStorage.getItem(STORAGE_KEY);
       if (stored) {
-        setStops(JSON.parse(stored));
+        const parsed = JSON.parse(stored);
+        // Clean up any removed items (like fogging oil)
+        const cleaned = parsed.map((s: ErrandStop) => ({
+          ...s,
+          items: s.items.filter((i) => i.id !== 'az-5'),
+        }));
+        setStops(cleaned);
       }
     } catch (e) {
       console.warn('Error reading from localStorage', e);
